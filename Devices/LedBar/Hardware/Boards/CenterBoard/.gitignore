@@ -1,0 +1,8 @@
+# Temporary files
+*.sch-bak
+fp-info-cache
+_autosave-*
+
+# Netlist files (exported from Eeschema)
+*.net
+
