@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 2 3
 Title "LedBar - CenterBoard"
 Date "2021-04-25"
 Rev "0.1"
@@ -19,7 +19,7 @@ U 1 1 6085A39B
 P 2750 4000
 F 0 "F201" V 2553 4000 50  0000 C CNN
 F 1 "Max. 5A F" V 2644 4000 50  0000 C CNN
-F 2 "" V 2680 4000 50  0001 C CNN
+F 2 "AmbientLight:Fuseholder_Cylinder-5x20mm_BLX_A_Horizontal" V 2680 4000 50  0001 C CNN
 F 3 "~" H 2750 4000 50  0001 C CNN
 	1    2750 4000
 	0    1    1    0   
@@ -40,9 +40,9 @@ L Connector:Conn_01x02_Male J201
 U 1 1 6085E602
 P 2300 4750
 F 0 "J201" H 2408 4931 50  0000 C CNN
-F 1 "12V input" H 2250 4700 50  0000 R CNN
-F 2 "" H 2300 4750 50  0001 C CNN
-F 3 "~" H 2300 4750 50  0001 C CNN
+F 1 "15EDGK-3.5/2p" H 2250 4700 50  0000 R CNN
+F 2 "AmbientLight:15EDG-3.81-2P" H 2300 4750 50  0001 C CNN
+F 3 "https://www.on-shore.com/wp-content/uploads/OSTOQXX3251.pdf" H 2300 4750 50  0001 C CNN
 	1    2300 4750
 	1    0    0    -1  
 $EndComp
@@ -150,7 +150,7 @@ U 1 1 608AC65D
 P 10000 4500
 F 0 "TP202" V 9954 4688 50  0000 L CNN
 F 1 "+5V" V 10045 4688 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 10200 4500 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 10200 4500 50  0001 C CNN
 F 3 "~" H 10200 4500 50  0001 C CNN
 	1    10000 4500
 	0    1    1    0   
