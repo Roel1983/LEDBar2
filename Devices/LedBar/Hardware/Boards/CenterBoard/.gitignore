@@ -2,6 +2,7 @@
 *.sch-bak
 fp-info-cache
 _autosave-*
+*.kicad_pcb-bak
 
 # Netlist files (exported from Eeschema)
 *.net
