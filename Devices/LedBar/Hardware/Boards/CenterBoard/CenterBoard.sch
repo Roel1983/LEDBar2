@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "LedBar - CenterBoard"
 Date "2021-04-25"
 Rev "0.1"
@@ -21,12 +21,6 @@ F1 "Power.sch" 50
 F2 "scl" I R 3500 2100 50 
 F3 "sda" B R 3500 2200 50 
 $EndSheet
-Wire Wire Line
-	3500 2100 4000 2100
-Wire Wire Line
-	3500 2200 4000 2200
-NoConn ~ 4000 2100
-NoConn ~ 4000 2200
 $Sheet
 S 2500 4000 1000 500 
 U 608655BB
@@ -36,4 +30,48 @@ F2 "txd" I R 3500 4200 50
 F3 "rxd" O R 3500 4100 50 
 F4 "tx_en" I R 3500 4400 50 
 $EndSheet
+$Sheet
+S 4500 4000 1000 1500
+U 608B1159
+F0 "Microcontroller" 50
+F1 "Microcontroller.sch" 50
+F2 "pwm2" O R 5500 5250 50 
+F3 "pwm1" O R 5500 5150 50 
+F4 "rxd" I L 4500 4100 50 
+F5 "txd" O L 4500 4200 50 
+F6 "tx_en" O L 4500 4400 50 
+F7 "~pca_oe~" O R 5500 4400 50 
+F8 "scl" O R 5500 4100 50 
+F9 "sda" B R 5500 4200 50 
+F10 "~button~" I R 5500 4750 50 
+$EndSheet
+Wire Wire Line
+	3500 4100 4500 4100
+Wire Wire Line
+	3500 4200 4500 4200
+Wire Wire Line
+	3500 4400 4500 4400
+Wire Wire Line
+	3500 2100 6000 2100
+Wire Wire Line
+	6000 2100 6000 4100
+Wire Wire Line
+	6000 4100 5500 4100
+Wire Wire Line
+	3500 2200 6100 2200
+Wire Wire Line
+	6100 2200 6100 4200
+Wire Wire Line
+	6100 4200 5500 4200
+Wire Wire Line
+	5500 4400 6500 4400
+Wire Wire Line
+	5500 4750 6500 4750
+Wire Wire Line
+	5500 5150 6500 5150
+Wire Wire Line
+	5500 5250 6500 5250
+NoConn ~ 6500 4400
+NoConn ~ 6500 5150
+NoConn ~ 6500 5250
 $EndSCHEMATC

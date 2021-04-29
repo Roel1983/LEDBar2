@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -108,7 +108,7 @@ U 1 1 608731C2
 P 7600 4350
 F 0 "TP305" H 7658 4468 50  0000 L CNN
 F 1 "txd" H 7658 4377 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7800 4350 50  0001 C CNN
+F 2 "AmbientLight:TestPoint_Pad_D1.0mm" H 7800 4350 50  0001 C CNN
 F 3 "~" H 7800 4350 50  0001 C CNN
 	1    7600 4350
 	1    0    0    -1  
@@ -119,7 +119,7 @@ U 1 1 608755BF
 P 7600 4650
 F 0 "TP306" H 7542 4676 50  0000 R CNN
 F 1 "rxd" H 7542 4767 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7800 4650 50  0001 C CNN
+F 2 "AmbientLight:TestPoint_Pad_D1.0mm" H 7800 4650 50  0001 C CNN
 F 3 "~" H 7800 4650 50  0001 C CNN
 	1    7600 4650
 	-1   0    0    1   
@@ -130,7 +130,7 @@ U 1 1 60875DD3
 P 7600 5050
 F 0 "TP307" H 7542 5076 50  0000 R CNN
 F 1 "tx_en" H 7542 5167 50  0000 R CNN
-F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 7800 5050 50  0001 C CNN
+F 2 "AmbientLight:TestPoint_Pad_D1.0mm" H 7800 5050 50  0001 C CNN
 F 3 "~" H 7800 5050 50  0001 C CNN
 	1    7600 5050
 	-1   0    0    1   
