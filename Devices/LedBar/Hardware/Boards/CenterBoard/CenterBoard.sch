@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title "LedBar - CenterBoard"
 Date "2021-04-25"
 Rev "0.1"
@@ -67,12 +67,6 @@ Wire Wire Line
 	5500 4400 6300 4400
 Wire Wire Line
 	5500 4750 6500 4750
-Wire Wire Line
-	5500 5150 6500 5150
-Wire Wire Line
-	5500 5250 6500 5250
-NoConn ~ 6500 5150
-NoConn ~ 6500 5250
 $Sheet
 S 7000 2000 1000 1000
 U 608B2A01
@@ -97,4 +91,16 @@ Wire Wire Line
 	7000 2900 6500 2900
 Wire Wire Line
 	6500 2900 6500 4750
+$Sheet
+S 7000 5000 1000 500 
+U 608C0E66
+F0 "0-10V" 50
+F1 "0-10V.sch" 50
+F2 "pwm1" I L 7000 5150 50 
+F3 "pwm2" I L 7000 5250 50 
+$EndSheet
+Wire Wire Line
+	5500 5150 7000 5150
+Wire Wire Line
+	5500 5250 7000 5250
 $EndSCHEMATC

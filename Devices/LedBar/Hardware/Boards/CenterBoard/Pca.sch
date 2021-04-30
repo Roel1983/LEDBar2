@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 5
+Sheet 5 6
 Title ""
 Date ""
 Rev ""
@@ -976,4 +976,30 @@ Text Label 9300 4000 0    50   ~ 0
 strip4_w
 Text Label 10450 3800 2    50   ~ 0
 strip4_w_out
+$Comp
+L power:+12V #PWR0101
+U 1 1 608DA5AE
+P 4000 5050
+F 0 "#PWR0101" H 4000 4900 50  0001 C CNN
+F 1 "+12V" H 4015 5223 50  0000 C CNN
+F 2 "" H 4000 5050 50  0001 C CNN
+F 3 "" H 4000 5050 50  0001 C CNN
+	1    4000 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4000 5050 4000 5150
+$Comp
+L power:+12V #PWR0102
+U 1 1 608DF9C9
+P 7500 5050
+F 0 "#PWR0102" H 7500 4900 50  0001 C CNN
+F 1 "+12V" H 7515 5223 50  0000 C CNN
+F 2 "" H 7500 5050 50  0001 C CNN
+F 3 "" H 7500 5050 50  0001 C CNN
+	1    7500 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 5050 7500 5150
 $EndSCHEMATC
