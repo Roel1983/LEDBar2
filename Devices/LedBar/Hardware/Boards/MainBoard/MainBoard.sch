@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 6
-Title "LedBar - CenterBoard"
+Title "LedBar - MainBoard"
 Date "2021-04-25"
 Rev "0.1"
 Comp "Roel Drost"

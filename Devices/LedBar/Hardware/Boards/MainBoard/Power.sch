@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 6
-Title "LedBar - CenterBoard"
+Title "LedBar - MainBoard"
 Date "2021-04-25"
 Rev "0.1"
 Comp "Roel Drost"
@@ -516,7 +516,6 @@ Connection ~ 6000 5500
 Wire Wire Line
 	6000 5500 7500 5500
 Connection ~ 7500 5500
-Connection ~ 2500 5500
 $Comp
 L power:PWR_FLAG #FLG0203
 U 1 1 608D884D

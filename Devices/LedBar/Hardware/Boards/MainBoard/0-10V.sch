@@ -4,10 +4,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 6
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "LedBar - MainBoard"
+Date "2021-04-25"
+Rev "0.1"
+Comp "Roel Drost"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -518,7 +518,7 @@ U 1 1 608FFA30
 P 8000 3000
 F 0 "R609" H 7930 2954 50  0000 R CNN
 F 1 "100" H 7930 3045 50  0000 R CNN
-F 2 "" V 7930 3000 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7930 3000 50  0001 C CNN
 F 3 "~" H 8000 3000 50  0001 C CNN
 	1    8000 3000
 	-1   0    0    1   
