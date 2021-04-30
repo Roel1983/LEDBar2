@@ -407,7 +407,7 @@ addr4
 Text Label 9050 5500 0    50   ~ 0
 addr5
 $Comp
-L Device:R_Network04_Split RN401
+L Device:R_Pack04_Split RN401
 U 1 1 60918B02
 P 9500 1000
 F 0 "RN401" V 9400 1000 50  0000 C CNN
@@ -418,7 +418,7 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9500 1000 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R_Network04_Split RN401
+L Device:R_Pack04_Split RN401
 U 2 1 608B38B6
 P 9500 1500
 F 0 "RN401" V 9400 1500 50  0000 C CNN
@@ -429,7 +429,7 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9500 1500 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R_Network04_Split RN401
+L Device:R_Pack04_Split RN401
 U 3 1 608B3CF0
 P 9500 2000
 F 0 "RN401" V 9400 2000 50  0000 C CNN
@@ -440,7 +440,7 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9500 2000 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R_Network04_Split RN401
+L Device:R_Pack04_Split RN401
 U 4 1 608B3FC7
 P 9500 2500
 F 0 "RN401" V 9400 2500 50  0000 C CNN
@@ -450,14 +450,6 @@ F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 9500 2500 50  0001 C CNN
 	4    9500 2500
 	0    -1   1    0   
 $EndComp
-Wire Wire Line
-	9000 1000 9350 1000
-Wire Wire Line
-	9000 1500 9350 1500
-Wire Wire Line
-	9000 2000 9350 2000
-Wire Wire Line
-	9000 2500 9350 2500
 $Comp
 L Device:LED D401
 U 1 1 608BAFD5
@@ -552,14 +544,8 @@ Wire Wire Line
 Connection ~ 10500 2000
 Wire Wire Line
 	10500 2000 10500 2500
-Text Label 9050 1000 0    50   ~ 0
+Text Label 8800 1000 0    50   ~ 0
 led1
-Text Label 9050 1500 0    50   ~ 0
-led2
-Text Label 9050 2000 0    50   ~ 0
-led3
-Text Label 9050 2500 0    50   ~ 0
-led4
 $Comp
 L Device:R R402
 U 1 1 60905DC6
@@ -790,4 +776,18 @@ F 3 "~" H 5000 2450 50  0001 C CNN
 	1    5000 2450
 	0    -1   -1   0   
 $EndComp
+Text Label 8800 1500 0    50   ~ 0
+led2_mosi
+Text Label 8800 2000 0    50   ~ 0
+led3_miso
+Text Label 8800 2500 0    50   ~ 0
+led4_sck
+Wire Wire Line
+	8750 1000 9350 1000
+Wire Wire Line
+	8750 1500 9350 1500
+Wire Wire Line
+	8750 2000 9350 2000
+Wire Wire Line
+	8750 2500 9350 2500
 $EndSCHEMATC
