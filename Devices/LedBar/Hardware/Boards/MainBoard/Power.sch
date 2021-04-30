@@ -38,13 +38,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x02_Male J201
 U 1 1 6085E602
-P 2300 4750
-F 0 "J201" H 2408 4931 50  0000 C CNN
-F 1 "12VDC/5A" H 2250 4700 50  0000 R CNN
-F 2 "AmbientLight:15EDGRC-3.81-2P" H 2300 4750 50  0001 C CNN
-F 3 "https://www.on-shore.com/wp-content/uploads/OSTOQXX3251.pdf" H 2300 4750 50  0001 C CNN
-	1    2300 4750
-	1    0    0    -1  
+P 2300 4850
+F 0 "J201" H 2150 4850 50  0000 C CNN
+F 1 "12VDC/5A" H 2250 4750 50  0000 R CNN
+F 2 "AmbientLight:15EDGRC-3.81-2P" H 2300 4850 50  0001 C CNN
+F 3 "https://www.on-shore.com/wp-content/uploads/OSTOQXX3251.pdf" H 2300 4850 50  0001 C CNN
+	1    2300 4850
+	1    0    0    1   
 $EndComp
 $Comp
 L Device:C C201
@@ -96,8 +96,6 @@ Wire Wire Line
 Connection ~ 3000 4000
 Wire Wire Line
 	3000 4900 3000 5500
-Wire Wire Line
-	2500 4750 2500 4000
 Wire Wire Line
 	2500 4850 2500 5500
 Connection ~ 3000 5500
@@ -438,8 +436,6 @@ Connection ~ 4350 3000
 Wire Wire Line
 	4350 3000 4350 3350
 Wire Wire Line
-	5000 4000 6000 4000
-Wire Wire Line
 	8000 4500 9000 4500
 Connection ~ 8000 4500
 Wire Wire Line
@@ -540,4 +536,8 @@ F 3 "~" H 4200 5600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4000 5500 4000 5600
+Wire Wire Line
+	5000 4000 6000 4000
+Wire Wire Line
+	2500 4000 2500 4750
 $EndSCHEMATC
