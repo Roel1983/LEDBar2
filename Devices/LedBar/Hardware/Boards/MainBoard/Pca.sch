@@ -218,7 +218,7 @@ U 1 1 608E095F
 P 2500 5350
 F 0 "J501" H 2418 5767 50  0000 C CNN
 F 1 "Left" H 2418 5676 50  0000 C CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x05_P2.00mm_Vertical" H 2500 5350 50  0001 C CNN
+F 2 "AmbientLight:RGBW-wire-solder-pads-L" H 2500 5350 50  0001 C CNN
 F 3 "~" H 2500 5350 50  0001 C CNN
 	1    2500 5350
 	-1   0    0    -1  
@@ -285,17 +285,6 @@ Wire Wire Line
 Connection ~ 4000 5900
 Wire Wire Line
 	4000 5900 3750 5900
-$Comp
-L power:GNDPWR #PWR0505
-U 1 1 608E9633
-P 4000 6100
-F 0 "#PWR0505" H 4000 5900 50  0001 C CNN
-F 1 "GNDPWR" H 4004 5946 50  0000 C CNN
-F 2 "" H 4000 6050 50  0001 C CNN
-F 3 "" H 4000 6050 50  0001 C CNN
-	1    4000 6100
-	1    0    0    -1  
-$EndComp
 $Comp
 L Connector_Generic:Conn_02x07_Odd_Even J502
 U 1 1 608F02DE
@@ -440,7 +429,7 @@ U 1 1 60922189
 P 9500 5350
 F 0 "J503" H 9580 5392 50  0000 L CNN
 F 1 "Right" H 9580 5301 50  0000 L CNN
-F 2 "Connector_PinHeader_2.00mm:PinHeader_1x05_P2.00mm_Vertical" H 9500 5350 50  0001 C CNN
+F 2 "AmbientLight:RGBW-wire-solder-pads-R" H 9500 5350 50  0001 C CNN
 F 3 "~" H 9500 5350 50  0001 C CNN
 	1    9500 5350
 	1    0    0    -1  
@@ -1002,4 +991,15 @@ F 3 "" H 7500 5050 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7500 5050 7500 5150
+$Comp
+L power:GNDPWR #PWR0505
+U 1 1 608E9633
+P 4000 6100
+F 0 "#PWR0505" H 4000 5900 50  0001 C CNN
+F 1 "GNDPWR" H 4004 5946 50  0000 C CNN
+F 2 "" H 4000 6050 50  0001 C CNN
+F 3 "" H 4000 6050 50  0001 C CNN
+	1    4000 6100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
