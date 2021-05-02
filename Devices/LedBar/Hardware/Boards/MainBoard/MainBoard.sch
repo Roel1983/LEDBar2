@@ -30,21 +30,6 @@ F2 "txd" I R 3500 4200 50
 F3 "rxd" O R 3500 4100 50 
 F4 "tx_en" I R 3500 4400 50 
 $EndSheet
-$Sheet
-S 4500 4000 1000 1500
-U 608B1159
-F0 "Microcontroller" 50
-F1 "Microcontroller.sch" 50
-F2 "pwm2" O R 5500 5250 50 
-F3 "pwm1" O R 5500 5150 50 
-F4 "rxd" I L 4500 4100 50 
-F5 "txd" O L 4500 4200 50 
-F6 "tx_en" O L 4500 4400 50 
-F7 "~pca_oe~" O R 5500 4400 50 
-F8 "scl" O R 5500 4100 50 
-F9 "sda" B R 5500 4200 50 
-F10 "~button~" I R 5500 4750 50 
-$EndSheet
 Wire Wire Line
 	3500 4100 4500 4100
 Wire Wire Line
@@ -97,10 +82,25 @@ U 608C0E66
 F0 "0-10V" 50
 F1 "0-10V.sch" 50
 F2 "pwm1" I L 7000 5150 50 
-F3 "pwm2" I L 7000 5250 50 
+F3 "~Brown_out~" O L 7000 5350 50 
 $EndSheet
 Wire Wire Line
 	5500 5150 7000 5150
+$Sheet
+S 4500 4000 1000 1500
+U 608B1159
+F0 "Microcontroller" 50
+F1 "Microcontroller.sch" 50
+F2 "pwm1" O R 5500 5150 50 
+F3 "rxd" I L 4500 4100 50 
+F4 "txd" O L 4500 4200 50 
+F5 "tx_en" O L 4500 4400 50 
+F6 "~pca_oe~" O R 5500 4400 50 
+F7 "scl" O R 5500 4100 50 
+F8 "sda" B R 5500 4200 50 
+F9 "~button~" I R 5500 4750 50 
+F10 "~brown_out~" I R 5500 5350 50 
+$EndSheet
 Wire Wire Line
-	5500 5250 7000 5250
+	5500 5350 7000 5350
 $EndSCHEMATC

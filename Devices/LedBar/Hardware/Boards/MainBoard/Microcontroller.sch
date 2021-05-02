@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 6
+Sheet 6 6
 Title "LedBar - MainBoard"
 Date "2021-04-25"
 Rev "0.1"
@@ -133,8 +133,6 @@ Wire Wire Line
 	1900 1800 1800 1800
 Wire Wire Line
 	1500 1800 1400 1800
-Text HLabel 4000 4100 2    50   Output ~ 0
-pwm2
 Text HLabel 4000 4000 2    50   Output ~ 0
 pwm1
 Text Label 3500 3100 0    50   ~ 0
@@ -167,7 +165,7 @@ Text Label 3500 2900 0    50   ~ 0
 debug2
 Text HLabel 4000 3000 2    50   Output ~ 0
 tx_en
-Text HLabel 4000 3700 2    50   Output ~ 0
+Text HLabel 5500 3700 2    50   Output ~ 0
 ~pca_oe~
 Text Label 3500 3800 0    50   ~ 0
 addr1
@@ -676,15 +674,13 @@ Wire Wire Line
 Wire Wire Line
 	3100 3600 4000 3600
 Wire Wire Line
-	3100 3700 4000 3700
+	3100 3700 5000 3700
 Wire Wire Line
 	3100 3800 4000 3800
 Wire Wire Line
 	3100 3900 4000 3900
 Wire Wire Line
 	3100 4000 4000 4000
-Wire Wire Line
-	3100 4100 4000 4100
 Wire Wire Line
 	3100 4200 4000 4200
 $Comp
@@ -790,4 +786,27 @@ Wire Wire Line
 	8750 2000 9350 2000
 Wire Wire Line
 	8750 2500 9350 2500
+NoConn ~ 3100 4100
+Text HLabel 5500 3900 2    50   Input ~ 0
+~brown_out~
+$Comp
+L Device:R R602
+U 1 1 60945A82
+P 5250 3900
+F 0 "R602" V 5350 3850 50  0000 L CNN
+F 1 "10k" V 5150 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5180 3900 50  0001 C CNN
+F 3 "~" H 5250 3900 50  0001 C CNN
+	1    5250 3900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 3900 5400 3900
+Wire Wire Line
+	5100 3900 5000 3900
+Wire Wire Line
+	5000 3900 5000 3700
+Connection ~ 5000 3700
+Wire Wire Line
+	5000 3700 5500 3700
 $EndSCHEMATC

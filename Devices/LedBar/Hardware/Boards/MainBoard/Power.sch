@@ -142,28 +142,6 @@ F 3 "~" H 6200 4000 50  0001 C CNN
 	1    6000 4000
 	0    1    1    0   
 $EndComp
-$Comp
-L Connector:TestPoint TP203
-U 1 1 608AC65D
-P 10000 4500
-F 0 "TP203" V 9954 4688 50  0000 L CNN
-F 1 "+5V" V 10045 4688 50  0000 L CNN
-F 2 "AmbientLight:TestPoint_Pad_D1.0mm" H 10200 4500 50  0001 C CNN
-F 3 "~" H 10200 4500 50  0001 C CNN
-	1    10000 4500
-	0    1    1    0   
-$EndComp
-$Comp
-L power:PWR_FLAG #FLG0204
-U 1 1 608A9885
-P 7000 4500
-F 0 "#FLG0204" H 7000 4575 50  0001 C CNN
-F 1 "PWR_FLAG" H 7000 4673 50  0001 C CNN
-F 2 "" H 7000 4500 50  0001 C CNN
-F 3 "~" H 7000 4500 50  0001 C CNN
-	1    7000 4500
-	1    0    0    -1  
-$EndComp
 Connection ~ 6000 4000
 $Comp
 L power:+12V #PWR0204
@@ -174,18 +152,6 @@ F 1 "+12V" H 6015 4173 50  0000 C CNN
 F 2 "" H 6000 4000 50  0001 C CNN
 F 3 "" H 6000 4000 50  0001 C CNN
 	1    6000 4000
-	1    0    0    -1  
-$EndComp
-Connection ~ 10000 4500
-$Comp
-L power:+5V #PWR0206
-U 1 1 608A8467
-P 10000 4500
-F 0 "#PWR0206" H 10000 4350 50  0001 C CNN
-F 1 "+5V" H 10015 4673 50  0000 C CNN
-F 2 "" H 10000 4500 50  0001 C CNN
-F 3 "" H 10000 4500 50  0001 C CNN
-	1    10000 4500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -237,12 +203,6 @@ Wire Wire Line
 Wire Wire Line
 	9000 4500 9000 4850
 Wire Wire Line
-	10000 4900 10000 5100
-Wire Wire Line
-	10000 4500 10000 4600
-Wire Wire Line
-	10000 5500 10000 5400
-Wire Wire Line
 	7500 4800 7500 5000
 $Comp
 L Device:C C206
@@ -266,30 +226,6 @@ F 3 "~" H 8000 4750 50  0001 C CNN
 	1    8000 4750
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6000 4000 6000 4100
-$Comp
-L Device:LED D202
-U 1 1 60870EE1
-P 10000 5250
-F 0 "D202" V 10039 5132 50  0000 R CNN
-F 1 "Blue" V 9948 5132 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 10000 5250 50  0001 C CNN
-F 3 "~" H 10000 5250 50  0001 C CNN
-	1    10000 5250
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R205
-U 1 1 608702AD
-P 10000 4750
-F 0 "R205" H 9930 4704 50  0000 R CNN
-F 1 "10k" H 9930 4795 50  0000 R CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 9930 4750 50  0001 C CNN
-F 3 "~" H 10000 4750 50  0001 C CNN
-	1    10000 4750
-	-1   0    0    1   
-$EndComp
 $Comp
 L Device:CP C208
 U 1 1 6086D1C2
@@ -311,17 +247,6 @@ F 2 "Capacitor_Tantalum_SMD:CP_EIA-6032-28_Kemet-C_Pad2.25x2.35mm_HandSolder" H 
 F 3 "~" H 6000 5000 50  0001 C CNN
 	1    6000 5000
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R204
-U 1 1 608667BE
-P 6000 4250
-F 0 "R204" H 5930 4204 50  0000 R CNN
-F 1 "100R/1W" H 5930 4295 50  0000 R CNN
-F 2 "Resistor_SMD:R_1812_4532Metric_Pad1.30x3.40mm_HandSolder" V 5930 4250 50  0001 C CNN
-F 3 "~" H 6000 4250 50  0001 C CNN
-	1    6000 4250
-	-1   0    0    1   
 $EndComp
 Connection ~ 4350 4000
 $Comp
@@ -412,18 +337,11 @@ Wire Wire Line
 	3000 5500 4000 5500
 Connection ~ 4000 5500
 Wire Wire Line
-	6000 4400 6000 4500
-Wire Wire Line
 	6000 4500 7000 4500
 Connection ~ 6000 4500
 Wire Wire Line
 	6000 4500 6000 4850
-Wire Wire Line
-	9000 4500 10000 4500
 Connection ~ 9000 4500
-Wire Wire Line
-	9000 5500 10000 5500
-Connection ~ 9000 5500
 Connection ~ 4650 4000
 Wire Wire Line
 	4650 3650 4650 4000
@@ -540,4 +458,28 @@ Wire Wire Line
 	5000 4000 6000 4000
 Wire Wire Line
 	2500 4000 2500 4750
+Wire Wire Line
+	6000 4000 6000 4500
+$Comp
+L power:+5V #PWR0206
+U 1 1 608A8467
+P 9000 4500
+F 0 "#PWR0206" H 9000 4350 50  0001 C CNN
+F 1 "+5V" H 9015 4673 50  0000 C CNN
+F 2 "" H 9000 4500 50  0001 C CNN
+F 3 "" H 9000 4500 50  0001 C CNN
+	1    9000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP203
+U 1 1 608AC65D
+P 9000 4500
+F 0 "TP203" V 8954 4688 50  0000 L CNN
+F 1 "+5V" V 9045 4688 50  0000 L CNN
+F 2 "AmbientLight:TestPoint_Pad_D1.0mm" H 9200 4500 50  0001 C CNN
+F 3 "~" H 9200 4500 50  0001 C CNN
+	1    9000 4500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
