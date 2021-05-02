@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 6
+Sheet 1 7
 Title "LedBar - MainBoard"
 Date "2021-04-25"
 Rev "0.1"
@@ -82,7 +82,6 @@ U 608C0E66
 F0 "0-10V" 50
 F1 "0-10V.sch" 50
 F2 "pwm1" I L 7000 5150 50 
-F3 "~Brown_out~" O L 7000 5350 50 
 $EndSheet
 Wire Wire Line
 	5500 5150 7000 5150
@@ -99,8 +98,15 @@ F6 "~pca_oe~" O R 5500 4400 50
 F7 "scl" O R 5500 4100 50 
 F8 "sda" B R 5500 4200 50 
 F9 "~button~" I R 5500 4750 50 
-F10 "~brown_out~" I R 5500 5350 50 
+F10 "~brown_out~" I L 4500 5150 50 
+$EndSheet
+$Sheet
+S 2500 5000 1000 500 
+U 6094F41A
+F0 "Brown-out" 50
+F1 "Brown-out.sch" 50
+F2 "~Brown_out~" O R 3500 5150 50 
 $EndSheet
 Wire Wire Line
-	5500 5350 7000 5350
+	3500 5150 4500 5150
 $EndSCHEMATC
