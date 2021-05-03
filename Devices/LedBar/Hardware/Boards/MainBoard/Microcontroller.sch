@@ -167,9 +167,9 @@ Text HLabel 4000 3000 2    50   Output ~ 0
 tx_en
 Text HLabel 7500 5500 2    50   Output ~ 0
 ~pca_oe~
-Text Label 3500 3800 0    50   ~ 0
-addr1
 Text Label 3500 3900 0    50   ~ 0
+addr1
+Text Label 3500 4100 0    50   ~ 0
 addr2
 Text Label 3500 4200 0    50   ~ 0
 addr3
@@ -784,35 +784,43 @@ Wire Wire Line
 	8750 2000 9350 2000
 Wire Wire Line
 	8750 2500 9350 2500
-NoConn ~ 3100 4100
-Text HLabel 6500 5700 0    50   Input ~ 0
+Text HLabel 7500 6000 2    50   Input ~ 0
 ~brown_out~
 $Comp
 L Device:R R602
 U 1 1 60945A82
-P 7000 5700
-F 0 "R602" V 7100 5700 50  0000 C CNN
-F 1 "10k" V 6900 5700 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6930 5700 50  0001 C CNN
-F 3 "~" H 7000 5700 50  0001 C CNN
-	1    7000 5700
-	0    1    1    0   
+P 7250 5750
+F 0 "R602" H 7200 5700 50  0000 R CNN
+F 1 "10k" H 7200 5800 50  0000 R CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 7180 5750 50  0001 C CNN
+F 3 "~" H 7250 5750 50  0001 C CNN
+	1    7250 5750
+	-1   0    0    1   
 $EndComp
 Text Label 3500 3700 0    50   ~ 0
 ~pca_oe~
 Wire Wire Line
 	3100 3700 4000 3700
+Text Label 6550 5500 0    50   ~ 0
+~pca_oe~
+Text Label 6550 6000 0    50   ~ 0
+~brown_out~
+Text Label 3500 3800 0    50   ~ 0
+~brown_out~
 Wire Wire Line
-	6500 5700 6850 5700
+	3100 4100 4000 4100
 Wire Wire Line
-	7150 5700 7250 5700
+	6500 6000 7250 6000
 Wire Wire Line
-	7250 5700 7250 5500
+	6500 5500 7250 5500
+Wire Wire Line
+	7250 5500 7250 5600
+Connection ~ 7250 5500
 Wire Wire Line
 	7250 5500 7500 5500
 Wire Wire Line
-	6500 5500 7250 5500
-Connection ~ 7250 5500
-Text Label 6550 5500 0    50   ~ 0
-~pca_oe~
+	7250 5900 7250 6000
+Connection ~ 7250 6000
+Wire Wire Line
+	7250 6000 7500 6000
 $EndSCHEMATC
