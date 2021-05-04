@@ -244,4 +244,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm393.pdf" H 5400 4000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6650 4000 7600 4000
+Text Label 4900 3900 0    50   ~ 0
+a1
 $EndSCHEMATC

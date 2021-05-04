@@ -484,4 +484,8 @@ Wire Wire Line
 Connection ~ 3600 4600
 Wire Wire Line
 	3600 4600 3350 4600
+Text Label 4500 4400 0    50   ~ 0
+B
+Text Label 4500 4600 0    50   ~ 0
+A
 $EndSCHEMATC
