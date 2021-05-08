@@ -154,9 +154,9 @@ led1
 Text Label 3500 2100 0    50   ~ 0
 led2_mosi
 Text Label 3500 2200 0    50   ~ 0
-led3_miso
+led4_miso
 Text Label 3500 2300 0    50   ~ 0
-led4_sck
+led3_sck
 Text Label 3500 2700 0    50   ~ 0
 ~button~
 Text Label 3500 2800 0    50   ~ 0
@@ -591,11 +591,11 @@ $EndComp
 Wire Wire Line
 	7000 3950 7000 4000
 Wire Wire Line
-	7000 3550 7000 3400
+	7000 3550 7000 3500
 Wire Wire Line
 	7000 3100 7000 3000
 Wire Wire Line
-	7100 3500 6500 3500
+	7100 3500 7000 3500
 Text Label 6550 3500 0    50   ~ 0
 ~reset~
 $Comp
@@ -634,9 +634,9 @@ Wire Wire Line
 Text Label 1600 5950 0    50   ~ 0
 led2_mosi
 Text Label 1600 5850 0    50   ~ 0
-led3_miso
+led4_miso
 Text Label 1600 6050 0    50   ~ 0
-led4_sck
+led3_sck
 Text Label 1600 6150 0    50   ~ 0
 ~reset~
 Wire Wire Line
@@ -773,9 +773,9 @@ $EndComp
 Text Label 8800 1500 0    50   ~ 0
 led2_mosi
 Text Label 8800 2000 0    50   ~ 0
-led3_miso
+led3_sck
 Text Label 8800 2500 0    50   ~ 0
-led4_sck
+led4_miso
 Wire Wire Line
 	8750 1000 9350 1000
 Wire Wire Line
@@ -823,4 +823,9 @@ Wire Wire Line
 Connection ~ 7250 6000
 Wire Wire Line
 	7250 6000 7500 6000
+Connection ~ 7000 3500
+Wire Wire Line
+	7000 3500 7000 3400
+Wire Wire Line
+	7000 3500 6500 3500
 $EndSCHEMATC
