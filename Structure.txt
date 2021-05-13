@@ -1,0 +1,24 @@
+- Devices/
+  - LedBar : <Device>
+    - 3D/
+      - Case : <Thing>
+      - Stud : <Thing>
+      - BendJoint : <Thing>
+      - StraightJoint : <Thing>
+    - Boards/
+      - CenterBack : <PCB>/
+	- <project>
+	- <shemas>
+	- <pcb>
+    - Firmware/
+      - LedBar : <firmware>/
+  - Shared/
+    - 3D/
+    - PCBs/
+      - <footprints>
+      - <symbols>
+    - Firmware/
+    - Bootloaders/
+      - HalfDuplexRS485 : <firmware>/
+- Software/
+- Documentation/
