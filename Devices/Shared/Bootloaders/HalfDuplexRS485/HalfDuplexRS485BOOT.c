@@ -856,9 +856,15 @@ void puthex(char ch) {
 	putch(ch);
 }
 
+static int rx_not_tx = 1;
 
 void putch(char ch)
 {
+	if(rx_not_tx) {
+		int w;
+		for(w=0; w < 200; w++) asm volatile("nop\n\t");
+		rx_not_tx = 0;
+	}
 	TXEN_PORT |= _BV(TXEN);
 	while (!(UCSR0A & _BV(UDRE0)));
 	UCSR0A |= _BV(TXC0);
@@ -869,6 +875,7 @@ void putch(char ch)
 
 char getch(void)
 {
+	rx_not_tx = 1;
 	TXEN_PORT &= ~_BV(TXEN);
 
 	uint32_t count = 0;
