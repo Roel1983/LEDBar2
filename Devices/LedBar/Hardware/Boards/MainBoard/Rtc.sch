@@ -1,0 +1,109 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 8 8
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Timer_RTC:DS1307Z+ U801
+U 1 1 60B26DA6
+P 5500 3500
+F 0 "U801" H 6044 3546 50  0000 L CNN
+F 1 "DS1307Z+" H 6044 3455 50  0000 L CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 5500 3000 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/DS1307.pdf" H 5500 3500 50  0001 C CNN
+	1    5500 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y801
+U 1 1 60B282E1
+P 4400 3650
+F 0 "Y801" V 4446 3519 50  0000 R CNN
+F 1 "23.768kHz" V 4355 3519 50  0000 R CNN
+F 2 "Crystal:Crystal_C38-LF_D3.0mm_L8.0mm_Vertical" H 4400 3650 50  0001 C CNN
+F 3 "~" H 4400 3650 50  0001 C CNN
+	1    4400 3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4400 3500 5000 3500
+Wire Wire Line
+	5000 3500 5000 3600
+Wire Wire Line
+	5000 3700 5000 3800
+Wire Wire Line
+	5000 3800 4400 3800
+$Comp
+L power:GND #PWR0104
+U 1 1 60B29BE9
+P 5500 4100
+F 0 "#PWR0104" H 5500 3850 50  0001 C CNN
+F 1 "GND" H 5505 3927 50  0000 C CNN
+F 2 "" H 5500 4100 50  0001 C CNN
+F 3 "" H 5500 4100 50  0001 C CNN
+	1    5500 4100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3900 5500 4100
+$Comp
+L power:+5V #PWR?
+U 1 1 60B2FDF0
+P 5400 2450
+AR Path="/608B2A01/60B2FDF0" Ref="#PWR?"  Part="1" 
+AR Path="/60B26976/60B2FDF0" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 5400 2300 50  0001 C CNN
+F 1 "+5V" H 5415 2623 50  0000 C CNN
+F 2 "" H 5400 2450 50  0001 C CNN
+F 3 "" H 5400 2450 50  0001 C CNN
+	1    5400 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 2450 5400 3100
+$Comp
+L Device:Battery_Cell BT801
+U 1 1 60B30350
+P 6000 2850
+F 0 "BT801" H 6118 2946 50  0000 L CNN
+F 1 "3V" H 6118 2855 50  0000 L CNN
+F 2 "Battery:Battery_Panasonic_CR1220-VCN_Vertical_CircularHoles" V 6000 2910 50  0001 C CNN
+F 3 "~" V 6000 2910 50  0001 C CNN
+	1    6000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 60B31CEC
+P 6000 2950
+F 0 "#PWR0106" H 6000 2700 50  0001 C CNN
+F 1 "GND" H 6005 2777 50  0000 C CNN
+F 2 "" H 6000 2950 50  0001 C CNN
+F 3 "" H 6000 2950 50  0001 C CNN
+	1    6000 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 3100 5500 2650
+Wire Wire Line
+	5500 2650 6000 2650
+NoConn ~ 6000 3500
+Wire Wire Line
+	5000 3400 4000 3400
+Wire Wire Line
+	5000 3300 4000 3300
+Text HLabel 4000 3300 0    50   Input ~ 0
+scl
+Text HLabel 4000 3400 0    50   BiDi ~ 0
+sda
+$EndSCHEMATC
