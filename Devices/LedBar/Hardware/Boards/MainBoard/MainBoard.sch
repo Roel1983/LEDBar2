@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 8
+Sheet 1 7
 Title "LedBar - MainBoard"
 Date "2021-04-25"
 Rev "0.1"
@@ -97,20 +97,6 @@ F0 "Brown-out" 50
 F1 "Brown-out.sch" 50
 F2 "~Brown_out~" O R 4000 5150 50 
 $EndSheet
-$Sheet
-S 8000 4000 1000 500 
-U 60B26976
-F0 "Rtc" 50
-F1 "Rtc.sch" 50
-F2 "scl" I L 8000 4100 50 
-F3 "sda" B L 8000 4200 50 
-$EndSheet
-Wire Wire Line
-	7000 4100 8000 4100
-Connection ~ 7000 4100
-Wire Wire Line
-	8000 4200 7100 4200
-Connection ~ 7100 4200
 Wire Wire Line
 	4000 2100 7000 2100
 Wire Wire Line
