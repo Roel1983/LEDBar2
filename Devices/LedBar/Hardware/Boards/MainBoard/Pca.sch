@@ -572,7 +572,7 @@ F 3 "" H 10000 1300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10000 1200 10000 1350
+	10000 1200 10000 1300
 Wire Wire Line
 	10000 800  10500 800 
 Wire Wire Line
@@ -1002,4 +1002,46 @@ F 3 "" H 4000 6050 50  0001 C CNN
 	1    4000 6100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60E72D62
+P 9250 1000
+AR Path="/608B1159/60E72D62" Ref="TP?"  Part="1" 
+AR Path="/608B2A01/60E72D62" Ref="TP502"  Part="1" 
+F 0 "TP502" V 9150 1200 50  0000 R CNN
+F 1 "strip1_w" V 9350 1300 50  0000 R CNN
+F 2 "AmbientLight:TestPoint_Pad_D1.0mm" H 9450 1000 50  0001 C CNN
+F 3 "~" H 9450 1000 50  0001 C CNN
+	1    9250 1000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60E8F95C
+P 10500 800
+AR Path="/608B1159/60E8F95C" Ref="TP?"  Part="1" 
+AR Path="/608B2A01/60E8F95C" Ref="TP503"  Part="1" 
+F 0 "TP503" V 10400 1000 50  0000 R CNN
+F 1 "strip1_w_out" V 10500 1450 50  0000 R CNN
+F 2 "AmbientLight:TestPoint_Pad_D1.0mm" H 10700 800 50  0001 C CNN
+F 3 "~" H 10700 800 50  0001 C CNN
+	1    10500 800 
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 60EE1BB4
+P 10000 1300
+AR Path="/608B1159/60EE1BB4" Ref="TP?"  Part="1" 
+AR Path="/608B2A01/60EE1BB4" Ref="TP504"  Part="1" 
+F 0 "TP504" V 9900 1650 50  0000 R CNN
+F 1 "gnd" V 10000 1600 50  0000 R CNN
+F 2 "AmbientLight:TestPoint_Pad_D1.0mm" H 10200 1300 50  0001 C CNN
+F 3 "~" H 10200 1300 50  0001 C CNN
+	1    10000 1300
+	0    1    1    0   
+$EndComp
+Connection ~ 10000 1300
+Wire Wire Line
+	10000 1300 10000 1350
 $EndSCHEMATC

@@ -224,8 +224,6 @@ Wire Wire Line
 Connection ~ 6000 4400
 Wire Wire Line
 	6500 4400 6850 4400
-Wire Wire Line
-	4750 2650 4750 2900
 Connection ~ 4750 2900
 Wire Wire Line
 	4750 2900 4500 2900
@@ -264,19 +262,6 @@ F 3 "~" H 6200 4500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6000 4500 6000 4400
-$Comp
-L power:+12V #PWR?
-U 1 1 6095EAD6
-P 4750 2650
-AR Path="/608C0E66/6095EAD6" Ref="#PWR?"  Part="1" 
-AR Path="/6094F41A/6095EAD6" Ref="#PWR0702"  Part="1" 
-F 0 "#PWR0702" H 4750 2500 50  0001 C CNN
-F 1 "+12V" H 4765 2823 50  0000 C CNN
-F 2 "" H 4750 2650 50  0001 C CNN
-F 3 "" H 4750 2650 50  0001 C CNN
-	1    4750 2650
-	1    0    0    -1  
-$EndComp
 Connection ~ 6500 4400
 $Comp
 L Comparator:LM393 U?
@@ -417,4 +402,19 @@ F 3 "~" H 9750 3500 50  0001 C CNN
 	1    9750 3500
 	0    1    1    0   
 $EndComp
+$Comp
+L power:+12VA #PWR?
+U 1 1 60E43840
+P 4750 2650
+AR Path="/608C0E66/60E43840" Ref="#PWR?"  Part="1" 
+AR Path="/6094F41A/60E43840" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 4750 2500 50  0001 C CNN
+F 1 "+12VA" H 4765 2823 50  0000 C CNN
+F 2 "" H 4750 2650 50  0001 C CNN
+F 3 "" H 4750 2650 50  0001 C CNN
+	1    4750 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2650 4750 2900
 $EndSCHEMATC
