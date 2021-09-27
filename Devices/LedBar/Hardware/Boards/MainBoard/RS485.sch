@@ -265,7 +265,7 @@ P 6350 2250
 F 0 "U302" H 6350 2765 50  0000 C CNN
 F 1 "B0505S-1W-SIP4" H 6350 2674 50  0000 C CNN
 F 2 "AmbientLight:B0505S-1W" H 6100 2250 50  0001 C CNN
-F 3 "" H 6100 2250 50  0001 C CNN
+F 3 "https://datasheetspdf.com/pdf-file/792761/MORNSUN/B0505S-1W/1" H 6100 2250 50  0001 C CNN
 	1    6350 2250
 	-1   0    0    -1  
 $EndComp
@@ -488,4 +488,23 @@ Text Label 4500 4400 0    50   ~ 0
 B
 Text Label 4500 4600 0    50   ~ 0
 A
+Text Notes 4600 2350 2    50   ~ 0
+Resistor added to make sure: The\nB0505S has a minimum load of\n10% of its maximum load.
+$Comp
+L Device:R R303
+U 1 1 6151011B
+P 5000 2250
+F 0 "R303" H 4950 2300 50  0000 R CNN
+F 1 "56" H 4950 2200 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder" V 4930 2250 50  0001 C CNN
+F 3 "~" H 5000 2250 50  0001 C CNN
+	1    5000 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2050 5000 2100
+Connection ~ 5000 2050
+Wire Wire Line
+	5000 2400 5000 2450
+Connection ~ 5000 2450
 $EndSCHEMATC
